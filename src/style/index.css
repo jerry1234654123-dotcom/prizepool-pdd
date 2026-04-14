@@ -1,0 +1,56 @@
+
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.mt-12 {
+  margin-top: 3.2vw;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+.click {
+  cursor: pointer;
+}
+.click:active {
+  transform: scale(0.95);
+  transition: all 0.15s ease-in-out;
+}
+.loading {
+  position: relative;
+  overflow: hidden;
+  opacity:0.8;
+}
+@keyframes loading-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.loading::after {
+  content: url('../assets/images/loading.png');
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: loading-spin 1s linear infinite;
+  display: block;
+  line-height: 0;
+  font-size: 0;
+}

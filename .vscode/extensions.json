@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "formulahendry.auto-rename-tag",
+    "meezilla.json",
+    "dbaeumer.vscode-eslint",
+    "steoates.autoimport",
+    "formulahendry.auto-close-tag",
+    "donjayamanne.githistory",
+    "eamodio.gitlens"
+  ]
+}

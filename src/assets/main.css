@@ -1,0 +1,58 @@
+@import './base.css';
+
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+
+}
+#app{
+  background: #27A9FA;
+}
+.yellow{
+  color: #FFDC60;
+}
+.van-progress__pivot{
+  border:1px solid white;
+}
+.van-progress{
+  border: 1px solid white;
+}
+.van-progress__portion{
+  background: linear-gradient(#1464FF, #1D9FFF, #05B8FF);
+}
+
+:root{
+  --van-overlay-z-index:99
+}
+.van-overlay{
+  z-index: 999!important;
+}
