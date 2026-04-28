@@ -31,7 +31,7 @@ export const useConfig = () => {
         'jtbluepdd': {
             homeType: '3'
         },       
-        'pdd111.com': {
+        'pdd111': {
             homeType: '3'
         },
         'localhost': {
@@ -103,6 +103,7 @@ export const useConfig = () => {
         'pdd478': 1084,
         'indomaret': 1084,
         '6396pdd': 2106,
+        'v2': 2100 //v2.vtpdd.com
     }
     const defaultConf = {
         base_url: 'https://api.gujilunpanguanglihoutaiyinni.life',
