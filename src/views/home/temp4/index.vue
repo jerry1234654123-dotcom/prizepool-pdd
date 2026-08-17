@@ -26,6 +26,7 @@
         {{ $t("dailyDraw")
         }}<span class="prize_times">{{ periodInformation.issue }}</span>
       </div>
+      <Banner :list="banners" :url="bannerUrl" />
       <div class="userDetails">
         <div class="avatarDetails">
           <div class="left">
@@ -287,6 +288,10 @@ import Rule from "./components/rule.vue";
 import Game from "./components/gameId.vue";
 import { Progress } from "vant";
 import { Vue3SeamlessScroll } from "vue3-seamless-scroll";
+import Banner from "@/components/banner.vue";
+import banner1 from "./img/banner1.webp";
+import banner2 from "./img/banner2.webp";
+import banner3 from "./img/banner3.webp";
 import { useRouter } from "vue-router";
 import { useUserStore } from "@/store/userInfo.js";
 import { useI18n } from "vue-i18n";
@@ -296,6 +301,9 @@ import { onMounted , onUnmounted } from 'vue'
 import { useConfig } from "@/config";
 
 const { locale } = useI18n();
+
+const banners = [banner1, banner2, banner3];
+const bannerUrl = "https://petiharta8.com";
 
 const userStore = useUserStore();
 
