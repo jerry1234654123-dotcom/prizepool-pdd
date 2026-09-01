@@ -38,9 +38,36 @@ export const useConfig = () => {
             homeType: '3'
         }
     }
+    /**
+     * hostKey（域名第一段） -> platform_id
+     * 完整域名一般为 {hostKey}.com，以线上部署为准
+     *
+     * 2001 Slot Game      third_game_back_id=1
+     *   rjpdd, rjpdd1, rjpdd2, rjpdd3, dfpdd, luckydfpdd
+     * 2011 Let's Thor     third_game_back_id=NULL
+     *   clpdd, clpdd1, clpdd2, 8638lucky, lucky8638
+     * 2003 ME355          third_game_back_id=NULL
+     *   pdd111
+     * 2004 JPS88          third_game_back_id=NULL
+     *   4892lotspdd
+     * 2010 Ri188          third_game_back_id=NULL
+     *   pdd52, y89pdd, y89slotspdd
+     * 2102 MZ356          third_game_back_id=NULL
+     *   8658pdd, ix669
+     * 2100 VT38           third_game_back_id=0
+     *   8218pdd, vt38pdd, vtpdd, vt38pdd1, v2(v2.vtpdd.com)
+     * 2014 luxury88       third_game_back_id=NULL
+     *   luxurypdd, rp777pdd, pdd147
+     * 1084 B11            third_game_back_id=NULL
+     *   splucky, luckysp, luckysp555~999, pddwuv, pddsp, pddsp6, pddsp8,
+     *   sp11, sp222, sp264, sp451, sp454, sp465, sp845, bestsp, pdd463, bigpdd, pdd478, indomaret
+     * 1089 JT blue        third_game_back_id=NULL
+     *   jtbluepdd, jt777aa, pdd456
+     */
     const idObj = {
         'localhost': 8888,
         'pdd': 8888, // pdd.df17g.com
+        // 2100 VT38
         '8218pdd': 2100,
         'vt38pdd': 2100,
         'vtpdd': 2100,
@@ -48,26 +75,33 @@ export const useConfig = () => {
         '8278pdd': 2101,
         'hw7779': 2101,
         'pdd654': 2101,
+        // 2102 MZ356
         '8658pdd': 2102,
         'ix669': 2102,
         '8728pdd': 2103,
         'gnpdd': 2103,
+        // 2014 luxury88
         'rp777pdd': 2014,
         'luxurypdd': 2014,
         'pdd147': 2014,
         '3178pdd': 2013,
+        // 2003 ME355
         'pdd111': 2003,
         'pdd333': 2013,
         'pdd444': 2013,
+        // 2011 Let's Thor
         'lucky8638': 2011,
         '8638lucky': 2011,
         'clpdd': 2011,
         'clpdd1': 2011,
         'clpdd2': 2011,
+        // 2010 Ri188
         'y89slotspdd': 2010,
         'y89pdd': 2010,
         'pdd52': 2010,
+        // 2004 JPS88
         '4892lotspdd': 2004,
+        // 2001 Slot Game
         'luckydfpdd': 2001,
         'dfpdd': 2001,
         'rjpdd3': 2001,
@@ -75,11 +109,13 @@ export const useConfig = () => {
         'rjpdd1': 2001,
         'rjpdd': 2001,
         'df09h': 2000,
+        // 1089 JT blue
         'jt777aa': 1089,
         'jtbluepdd': 1089,
         'pdd456': 1089,
         '3031tt': 1095,
         '8768pdd': 1106,
+        // 1084 B11
         'splucky': 1084,
         'luckysp999': 1084,
         'luckysp888': 1084,

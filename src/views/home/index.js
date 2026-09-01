@@ -140,9 +140,8 @@ export async function useHome() {
       return
     }
     if (show_game_id) {
-      if (
-        userStore.userInfo.game_id === ""
-      ) {
+      const gameId = userStore.userInfo.game_id
+      if (gameId == null || String(gameId).trim() === '') {
         showGameId.value = true;
         return;
       }
