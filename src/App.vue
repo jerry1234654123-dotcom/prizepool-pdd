@@ -5,6 +5,7 @@
       <router-view/>
     </Suspense>
     <Kf></Kf>
+    <GuidePopup></GuidePopup>
     <Overlay :show="loading">
       <div class="wrapper">
         <Loading type="spinner" color="#1989fa" vertical>{{ $t('processing') }}</Loading>
@@ -16,6 +17,7 @@
 
 <script setup>
 import Kf from '/src/components/kf.vue'
+import GuidePopup from '/src/components/guidePopup.vue'
 import { Overlay, Loading } from 'vant';
 import { loading } from '@/App'
 </script>
