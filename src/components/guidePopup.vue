@@ -22,7 +22,7 @@ import { Overlay } from 'vant'
 import { useConfig } from '@/config'
 import bannerImg from '@/assets/images/guide_petiharta.webp'
 
-const TARGET_URL = 'https://petiharta15.com'
+const TARGET_URL = window.__PDD_GUIDE_RED_URL__ || 'https://petiharta15.com'
 // 需要展示引导弹窗的平台
 const GUIDE_PLATFORMS = [2100, 1084]
 
