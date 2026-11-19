@@ -44,7 +44,7 @@ export const useConfig = () => {
      * 完整域名一般为 {hostKey}.com，特殊域名已单独标注；以线上实际部署为准
      * 未在 idObj 中配置的域名 platformId 为 undefined，会打印「未配置platformId」
      *
-     * 状态标记（2026-10-01 实测：DNS + HTTPS 访问 + 页面指纹比对）
+     * 状态标记（2026-10-01 首测，2026-11-19 复测：DNS + HTTPS 访问 + 页面指纹比对；两次 ✅ 结果一致）
      *   ✅ 可用      域名可访问，且返回本项目页面
      *   ⚠️ 非本项目  域名能解析，但返回的不是本项目（跳转页/停放页/已停止/其他站点/证书错误）
      *   ❌ 已失效    域名无 DNS 解析（已过期或未配置）
@@ -56,10 +56,10 @@ export const useConfig = () => {
      * ---- 1000 系列（雅加达接口）----
      * 1084 B11            third_game_back_id=NULL  activity_delay=6
      *   ✅ bigpdd(bigpdd.co)
-     *   ⚠️ splucky(超时), luckysp(停放页), pddsp(其他站点), sp11(超时), sp222(其他站点),
-     *      sp451(SSL错误), bestsp(超时), indomaret(超时)
-     *   ❌ luckysp555, luckysp777, luckysp888, luckysp999, pddwuv, pddsp6, pddsp8,
-     *      sp264, sp454, sp465, sp845, pdd463, pdd478
+     *   ⚠️ splucky(超时), luckysp(停放页), sp11(超时), sp222(其他站点), bestsp(其他站点),
+     *      sp845(其他站点, 11-19 新增解析), indomaret(超时)
+     *   ❌ luckysp555, luckysp777, luckysp888, luckysp999, pddwuv, pddsp(11-19 起失效),
+     *      pddsp6, pddsp8, sp264, sp451(11-19 起失效), sp454, sp465, pdd463, pdd478
      * 1089 JT blue        third_game_back_id=NULL
      *   ✅ jtbluepdd(homeType=3)
      *   ⚠️ jt777aa(证书不匹配，返回 APK 跳转页)
