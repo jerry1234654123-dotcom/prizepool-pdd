@@ -25,6 +25,9 @@ export const useConfig = () => {
         'ix669': {
             homeType: '3'
         },
+        'ix853': {
+            homeType: '3'
+        },
         'luxurypdd': {
             homeType: '3'
         }, 
@@ -103,6 +106,7 @@ export const useConfig = () => {
      *   ❌ 8278pdd, pdd654
      * 2102 MZ356          third_game_back_id=NULL
      *   ✅ ix669(homeType=3)
+     *   🆕 ix853(homeType=3, 2026-11-26 新增，配置同 ix669，待上线后验证)
      *   ⚠️ 8658pdd(证书不匹配，返回 APK 跳转页)
      * 2103
      *   ❌ 8728pdd, gnpdd
@@ -135,6 +139,7 @@ export const useConfig = () => {
         // 2102 MZ356
         '8658pdd': 2102,
         'ix669': 2102,
+        'ix853': 2102,
         '8728pdd': 2103,
         'gnpdd': 2103,
         // 2014 luxury88
