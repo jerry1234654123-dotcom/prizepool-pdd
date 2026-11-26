@@ -75,7 +75,7 @@ export const useConfig = () => {
      * ---- 2000 系列 ----
      * 2000
      *   ❌ df09h
-     * 2001 Slot Game      third_game_back_id=1     activity_delay=6
+     * 2001 Game      third_game_back_id=1     activity_delay=6
      *   ✅ rjpdd(homeType=2), rjpdd2(homeType=2), rjpdd3(homeType=2)
      *   ⚠️ rjpdd1(homeType=1, 证书不匹配，返回 APK 跳转页), dfpdd(超时),
      *      luckydfpdd(提示 website has been stopped)
@@ -163,7 +163,7 @@ export const useConfig = () => {
         'pdd52': 2010,
         // 2004 JPS88
         '4892lotspdd': 2004,
-        // 2001 Slot Game
+        // 2001 Game
         'luckydfpdd': 2001,
         'dfpdd': 2001,
         'rjpdd3': 2001,

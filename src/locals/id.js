@@ -87,7 +87,7 @@ export default {
     check: "Check-in",
     rule1: 'Aturan',
     zjmd: "Daftar Pemenang",
-    game_btn: "Gratis Bermain Slot",
+    game_btn: "Gratis Bermain",
     depositTit: 'Keberuntungan Super "7"',
     gameId:{
         des:"         Harap periksa dengan seksama untuk memastikan bahwa pengisian ID game sudah benar dan kemudian ikatkan,\n" +
