@@ -15,6 +15,7 @@
             <VFacebookLogin
               v-if="otherLoginDict && otherLoginDict.facebook"
               :app-id="otherLoginDict.facebook"
+              :login-options="{ scope: 'public_profile' }"
               @sdk-init="checkAndLogout"
               @login="fbTryLogin"
             />
